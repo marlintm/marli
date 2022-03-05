@@ -59,8 +59,8 @@ async def gen_thumb(thumbnail, title, userid, status, views, duration, channel):
     final_img_arr = np.dstack((img_arr,lum_img_arr))
     image3 = Image.fromarray(final_img_arr)
     image3 = image3.resize((500,500))
-
-    image2.paste(image3, (50,150), mask = image3)
+                             الطول
+    image2.paste(image3, (60,168), mask = image3)
     image2.paste(circle, (0,0), mask = circle)
 
     # fonts
