@@ -32,7 +32,7 @@ def changeImageSize(maxWidth, maxHeight, image):
     return newImage
 
 
-async def gen_thumb(thumbnail, title, userid, status, views, duration, channel):
+async def gen_thumb(thumbnail, title, userid, status, views, duration, channel,Comments):
     async with aiohttp.ClientSession() as session:
         async with session.get(thumbnail) as resp:
             if resp.status == 200:
