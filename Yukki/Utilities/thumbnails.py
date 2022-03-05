@@ -50,10 +50,10 @@ async def gen_thumb(thumbnail, title, userid, status, views, duration, channel):
     image2 = Image.blend(image1,black,0.6)
 
     # Cropping circle from thubnail
-    image3 = image11.crop((200,0,1000,720))
-    lum_img = Image.new('L', [720,720] , 0)
+    image3 = image11.crop((280,0,1000,720))
+    lum_img = Image.new('L', [500,500] , 0)
     draw = ImageDraw.Draw(lum_img)
-    draw.pieslice([(0,0), (600,600)], 0, 500, fill = 500, outline = "white")
+    draw.pieslice([(0,0), (500,500)], 0, 500, fill = 500, outline = "white")
     img_arr =np.array(image3)
     lum_img_arr =np.array(lum_img)
     final_img_arr = np.dstack((img_arr,lum_img_arr))
