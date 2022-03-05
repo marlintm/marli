@@ -42,7 +42,7 @@ async def gen_thumb(thumbnail, title, userid, status, views, duration, channel):
     
     image = Image.open(f"cache/thumb{userid}.jpg")
     black = Image.open("Utils/black.jpg")
-    circle = Image.open("Utils/circle.png")
+    square = Image.open("Utils/circle.png")
     image1 = changeImageSize(1280, 720, image)
     image1 = image1.filter(ImageFilter.BoxBlur(10))
     image11 = changeImageSize(1280, 720, image)
@@ -61,7 +61,7 @@ async def gen_thumb(thumbnail, title, userid, status, views, duration, channel):
     image3 = image3.resize((550,550))
 
     image2.paste(image3, (70,70), mask = image3)
-    image2.paste(circle, (0,0), mask = circle)
+    image2.paste(square, (0,0), mask = square)
 
     # fonts
     font1 = ImageFont.truetype(r'Utils/Lalezar-Regular.ttf', 30)
