@@ -52,9 +52,16 @@ async def gen_thumb(thumbnail, title, userid, status, views, duration, channel):
     # Cropping circle from thubnail
     image3 = image11.crop((280,0,1000,720))
     lum_img = Image.new('L', [720,720] , 0)
+    draw = ImageDraw.Draw(lum_img)
+    draw.pieslice([(0,0), (720,720)], 0, 360, fill = 255, outline = "white")
+    img_arr =np.array(image3)
+    lum_img_arr =np.array(lum_img)
+    final_img_arr = np.dstack((img_arr,lum_img_arr))
+    image3 = Image.fromarray(final_img_arr)
+    image3 = image3.resize((600,600))
 
     image2.paste(image3, (50,70), mask = image3)
-    image2.paste(circle, (0,0), mask = circle)
+    image2.paste(circle, (500,500), mask = circle)
 
     # fonts
     font1 = ImageFont.truetype(r'Utils/Lalezar-Regular.ttf', 30)
