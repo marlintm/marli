@@ -53,7 +53,7 @@ async def gen_thumb(thumbnail, title, userid, status, views, duration, channel):
     image3 = image11.crop((280,0,1000,720))
     lum_img = Image.new('L', [720,720] , 0)
     draw = ImageDraw.Draw(lum_img)
-    draw.pieslice([(100,100), (720,720)], 0, 360, fill = 255, outline = "white")
+    draw.pieslice([(50,50), (720,720)], 0, 360, fill = 255, outline = "white")
     img_arr =np.array(image3)
     lum_img_arr =np.array(lum_img)
     final_img_arr = np.dstack((img_arr,lum_img_arr))
