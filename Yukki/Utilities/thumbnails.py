@@ -87,6 +87,7 @@ async def gen_thumb(thumbnail, title, userid, status, views, duration, channel,C
     image4.text((670, 450), text=views, fill="white", font = font4, align ="left") 
     image4.text((670, 500), text=duration, fill="white", font = font4, align ="left") 
     image4.text((670, 550), text=channel, fill="white", font = font4, align ="left")
+    image4.text((670, 550), text=Comments, fill="white", font = font4, align ="left")
 
     image2.save(f"cache/final{userid}.png")
     os.remove(f"cache/thumb{userid}.jpg")
