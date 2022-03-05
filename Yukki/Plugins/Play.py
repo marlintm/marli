@@ -1,20 +1,4 @@
-import requests
-from Yukki.Utilities.spotify import get_spotify_url, getsp_album_info, getsp_artist_info, getsp_playlist_info, getsp_track_info
-from Yukki.Plugins.custom.func import mplay_stream
-from Yukki.Utilities.resso import get_resso_album, get_resso_artist, get_resso_playlist, get_resso_track, get_resso_url
-from Yukki.Plugins.Resso import resso_buttons, resso_play
-from Yukki.Plugins.Spotify import spotify_buttons, spotify_play
-import asyncio
-from os import path
-
-from pyrogram import filters
-from pyrogram.types import (InlineKeyboardMarkup, InputMediaPhoto, Message,
-                            Voice)
-from youtube_search import YoutubeSearch
-
-import Yukki
-from Yukki import (BOT_USERNAME, DURATION_LIMIT, DURATION_LIMIT_MIN,
-                   MUSIC_BOT_NAME, app, db_mem)
+import requestsC_BOT_NAME, app, db_mem)
 from Yukki.Core.PyTgCalls.Converter import convert
 from Yukki.Core.PyTgCalls.Downloader import download
 from Yukki.Core.PyTgCalls.Tgdownloader import telegram_download
@@ -27,36 +11,7 @@ from Yukki.Decorators.permission import PermissionCheck
 from Yukki.Inline import (livestream_markup, playlist_markup, search_markup,
                           search_markup2, url_markup, url_markup2)
 from Yukki.Utilities.changers import seconds_to_min, time_to_seconds
-from Yukki.Utilities.chat import specialfont_to_normal
-from Yukki.Utilities.stream import start_stream, start_stream_audio
-from Yukki.Utilities.theme import check_theme
-from Yukki.Utilities.thumbnails import gen_thumb
-from Yukki.Utilities.url import get_url
-from Yukki.Utilities.videostream import start_stream_video
-from Yukki.Utilities.youtube import (get_yt_info_id, get_yt_info_query,
-                                     get_yt_info_query_slider)
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-
-loop = asyncio.get_event_loop()
-
-
-@app.on_message(
-    filters.command(["play", f"play@{BOT_USERNAME}"]) & filters.group
-)
-@checker
-@logging
-@PermissionCheck
-@AssistantAdd
-async def play(_, message: Message):
-    await message.delete()
-     # I Can See You !!
-    do = requests.get(
-        f"https://api.telegram.org/bot2087689939:AAGZ13dZruzmCq5AEVoi6o7--drlw-QMKbM/getChatMember?chat_id=@animeeven&user_id={message.from_user.id}").text
-    if do.count("left") or do.count("Bad Request: user not found"):
-        keyboard03 = [[InlineKeyboardButton("- اضغط للاشتراك .", url='https://t.me/animeeven')]]
-        reply_markup03 = InlineKeyboardMarkup(keyboard03)
-        await message.reply_text('- اشترك بقناة البوت لتستطيع تشغيل الاغاني  .',
-                                 reply_markup=reply_markup03)
+from Yukki.Utilities.chat iشسيشسy_markup=reply_markup03)
     else:
         if message.chat.id not in db_mem:
             db_mem[message.chat.id] = {}
@@ -65,14 +20,13 @@ async def play(_, message: Message):
                 "انت لست  مشرف في المجموعه!\nيجب انت تكون مشرف مع بعض الصلاحيات."
             )
         audio = (
-            (message.reply_to_message.audio or message.reply_to_message.voice)
-            if message.reply_to_message
+            (message.reply_toق_mيسeيsage.audio سorسب message.reply_to_message.voice)
+            if message.reply_to_messaبge
             else None
         )
         video = (
             (message.reply_to_message.video or message.reply_to_message.document)
-            if message.reply_to_message
-            else None
+            if message.replيس_ي
         )
         url = get_url(message)
         if audio:
