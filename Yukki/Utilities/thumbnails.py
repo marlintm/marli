@@ -51,7 +51,8 @@ async def gen_thumb(thumbnail, title, userid, status, views, duration, channel):
 
     # Cropping circle from thubnail
     image3 = image11.crop((280,0,1000,720))
-    
+    lum_img = Image.new('L', [720,720] , 0)
+
     image2.paste(image3, (50,70), mask = image3)
     image2.paste(circle, (0,0), mask = circle)
 
