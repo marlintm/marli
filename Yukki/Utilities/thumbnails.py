@@ -50,7 +50,7 @@ async def gen_thumb(thumbnail, title, userid, status, views, duration, channel):
     image2 = Image.blend(image1,black,0.6)
 
     # Cropping circle from thubnail
-    image3 = image11.crop((280,0,1000,720))
+    image3 = image11.crop((200,0,1000,720))
     lum_img = Image.new('L', [720,720] , 0)
     draw = ImageDraw.Draw(lum_img)
     draw.pieslice([(0,0), (600,600)], 0, 500, fill = 500, outline = "white")
