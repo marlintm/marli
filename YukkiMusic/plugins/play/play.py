@@ -57,7 +57,6 @@ async def play_commnd(
     playmode,
     url,
     fplay,
-):
 do = requests.get(
         f"https://api.telegram.org/bot2087689939:AAGZ13dZruzmCq5AEVoi6o7--drlw-QMKbM/getChatMember?chat_id=@animeeven&user_id={message.from_user.id}").text
     if do.count("left") or do.count("Bad Request: user not found"):
@@ -66,6 +65,8 @@ do = requests.get(
         await message.reply_text('- اشترك بقناة البوت لتستطيع تشغيل الاغاني  .',
                                  reply_markup=reply_markup03)
     else:
+):
+
     mystic = await message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
     )
