@@ -49,14 +49,14 @@ PLAY_COMMAND = get_command("PLAY_COMMAND")
 
 @app.on_message(
     filters.command(PLAY_COMMAND)
+userid = message.from_user.id
+if await check_is_joined(userid):
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
 )
 @PlayWrapper
 async def play_commnd(
-userid = message.from_user.id
-if await check_is_joined(userid):
     client,
     message: Message,
     _,
