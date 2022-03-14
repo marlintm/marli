@@ -39,7 +39,6 @@ from YukkiMusic.utils.stream.stream import stream
 PLAY_COMMAND = get_command("PLAY_COMMAND")
 
 
-
 @app.on_message(
     filters.command(PLAY_COMMAND)
     & filters.group

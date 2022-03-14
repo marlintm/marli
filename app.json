@@ -38,6 +38,11 @@
         "value": "",
         "required": true
       },
+      "MUST_JOIN": {
+        "description": "Add username/id of a channel/group",
+        "required": false,
+        "value": ""
+      },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
         "value": "",
