@@ -55,6 +55,8 @@ PLAY_COMMAND = get_command("PLAY_COMMAND")
 )
 @PlayWrapper
 async def play_commnd(
+userid = message.from_user.id
+if await check_is_joined(userid):
     client,
     message: Message,
     _,
@@ -65,8 +67,7 @@ async def play_commnd(
     url,
     fplay,
 ):
-userid = message.from_user.id
-if await check_is_joined(userid):
+
     mystic = await message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
     )
