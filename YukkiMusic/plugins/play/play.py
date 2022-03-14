@@ -41,10 +41,11 @@ async def check_is_joined(userid):
     except Exception:
         await app.send_message(userid,text=FORCE_TEXT,reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
         return False
-FORCE_TEXT = "force message text"
+
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
+FORCE_TEXT = "force message text"
 
 
 @app.on_message(
