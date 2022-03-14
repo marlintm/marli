@@ -74,7 +74,9 @@ AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
 AUTO_LEAVE_ASSISTANT_TIME = int(
     getenv("ASSISTANT_LEAVE_TIME", "5400")
 )  # Remember to give value in Seconds
-
+MUST_JOIN = os.environ.get('MUST_JOIN', None)
+    if MUST_JOIN.startswith("@"):
+        MUST_JOIN = MUST_JOIN.replace("@", "")
 # Time after which bot will suggest random chats about bot commands.
 AUTO_SUGGESTION_TIME = int(
     getenv("AUTO_SUGGESTION_TIME", "5400")
