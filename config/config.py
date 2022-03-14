@@ -74,9 +74,7 @@ AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
 AUTO_LEAVE_ASSISTANT_TIME = int(
     getenv("ASSISTANT_LEAVE_TIME", "5400")
 )  # Remember to give value in Seconds
-MUST_JOIN = os.environ.get('MUST_JOIN', None)
-    if MUST_JOIN.startswith("@"):
-        MUST_JOIN = MUST_JOIN.replace("@", "")
+
 # Time after which bot will suggest random chats about bot commands.
 AUTO_SUGGESTION_TIME = int(
     getenv("AUTO_SUGGESTION_TIME", "5400")
@@ -94,10 +92,6 @@ PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
 # Time sleep duration For Youtube Downloader
 YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "3"))
 
-MUST_JOIN = os.environ.get('MUST_JOIN', None)
-    if MUST_JOIN.startswith("@"):
-        MUST_JOIN = MUST_JOIN.replace("@", "")
-
 # Time sleep duration For Telegram Downloader
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
@@ -110,9 +104,6 @@ SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "8130539ee3cf4b30bc24d2f
 
 # Maximum number of video calls allowed on bot. You can later set it via /set_video_limit on telegram
 VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "3"))
-
-if MUST_JOIN.startswith("@"):
-        MUST_JOIN = MUST_JOIN[1:]
 
 # Maximum Limit Allowed for users to save playlists on bot's server
 SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "50"))
