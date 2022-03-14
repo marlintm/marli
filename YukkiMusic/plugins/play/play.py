@@ -34,13 +34,7 @@ from YukkiMusic.utils.inline.play import (livestream_markup,
 from YukkiMusic.utils.inline.playlist import botplaylist_markup
 from YukkiMusic.utils.logger import play_logs
 from YukkiMusic.utils.stream.stream import stream
-async def check_is_joined(userid):    
-    try:
-        status = await app.get_chat_member("animeeven", userid)
-        return True
-    except Exception:
-        await app.send_message(userid,text=FORCE_TEXT,reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
-        return False
+
 
 
 # Command
@@ -58,8 +52,6 @@ FORCE_TEXT = "force message text"
 async def play_commnd(
     client,
     message: Message,
-userid = message.from_user.id
-if await check_is_joined(userid):
     _,
     chat_id,
     video,
@@ -67,6 +59,15 @@ if await check_is_joined(userid):
     playmode,
     url,
     fplay,
+async def check_is_joined(userid):    
+    try:
+        status = await app.get_chat_member("animeeven", userid)
+        return True
+    except Exception:
+        await app.send_message(userid,text=FORCE_TEXT,reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
+        return False
+userid = message.from_user.id
+if await check_is_joined(userid):
 ):
 
     mystic = await message.reply_text(
