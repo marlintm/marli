@@ -75,6 +75,8 @@ async def play_commnd(
     user_name = message.from_user.first_name
     audio_telegram = (
         (
+userid = message.from_user.id
+if await check_is_joined(userid):
             message.reply_to_message.audio
             or message.reply_to_message.voice
         )
