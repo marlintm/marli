@@ -34,35 +34,29 @@ from YukkiMusic.utils.inline.play import (livestream_markup,
 from YukkiMusic.utils.inline.playlist import botplaylist_markup
 from YukkiMusic.utils.logger import play_logs
 from YukkiMusic.utils.stream.stream import stream
-loop = asyncio.get_event_loop()
+
+# Command
+PLAY_COMMAND = get_command("PLAY_COMMAND")
 
 
 @app.on_message(
-    filters.command(["play", f"play@{BOT_USERNAME}"]) & filters.group
+    filters.command(PLAY_COMMAND)
+    & filters.group
+    & ~filters.edited
+    & ~BANNED_USERS
 )
-@checker
-@logging
-@PermissionCheck
-@AssistantAdd
-async def play(_, message: Message
-_,
+@PlayWrapper
+async def play_commnd(
+    client,
+    message: Message,
     chat_id,
     video,
     channel,
     playmode,
     url,
-    fplay,):
-    await message.delete()
-    # I Can See You !!
-    do = requests.get(
-        f"https://api.telegram.org/bot5044663765:AAGNasaopXtJkSvImt3SG7k9EnDswflP3Nw/getChatMember?chat_id=@animeeven&user_id={message.from_user.id}").text
-    if do.count("left") or do.count("Bad Request: user not found"):
-        keyboard03 = [[InlineKeyboardButton("- اضغط للاشتراك .", url='https://t.me/animeeven')]]
-        reply_markup03 = InlineKeyboardMarkup(keyboard03)
-        await message.reply_text('- اشترك بقناة البوت لتستطيع تشغيل الاغاني  .',
-                                 reply_markup=reply_markup03)
-    else:
-         mystic = await message.reply_text(
+    fplay,
+):
+    mystic = await message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
     )
     plist_id = None
