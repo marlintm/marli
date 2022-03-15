@@ -56,6 +56,8 @@ PLAY_COMMAND = get_command("PLAY_COMMAND")
 async def play_commnd(
     client,
     message: Message,
+    user_id = message.from_user.id
+    if await check_is_joined(userid): None
     _,
     chat_id,
     video,
@@ -64,8 +66,6 @@ async def play_commnd(
     url,
     fplay,
 ):
-    user_id = message.from_user.id
-    if await check_is_joined(userid): None
     mystic = await message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
     )
