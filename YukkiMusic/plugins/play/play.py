@@ -34,7 +34,7 @@ from YukkiMusic.utils.inline.play import (livestream_markup,
 from YukkiMusic.utils.inline.playlist import botplaylist_markup
 from YukkiMusic.utils.logger import play_logs
 from YukkiMusic.utils.stream.stream import stream
-async def check_is_joined(userid):    
+async def check_is_joined(userid)
     try:
         status = await app.get_chat_member("animeeven", userid)
         return True
@@ -68,7 +68,7 @@ async def play_commnd(
         _["play_2"].format(channel) if channel else _["play_1"]
     )
     user_id = message.from_user.id
-    if await check_is_joined(userid):
+    if await check_is_joined(userid)
     plist_id = None
     slider = None
     plist_type = None
