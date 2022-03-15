@@ -51,11 +51,11 @@ PLAY_COMMAND = get_command("PLAY_COMMAND")
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
+    user_id = message.from_user.id
+    if await check_is_joined(userid): None
 )
 @PlayWrapper
 async def play_commnd(
-    user_id = message.from_user.id
-    if await check_is_joined(userid): None
     client,
     message: Message,
     _,
