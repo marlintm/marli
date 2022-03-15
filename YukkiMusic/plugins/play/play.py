@@ -67,12 +67,12 @@ async def play_commnd(
     mystic = await message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
     )
-    user_id = message.from_user.id
-    if await check_is_joined(userid): None
     plist_id = None
     slider = None
     plist_type = None
     spotify = None
+    user_id = message.from_user.id
+    if await check_is_joined(userid): None
     user_name = message.from_user.first_name
     audio_telegram = (
         (
