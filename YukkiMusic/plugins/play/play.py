@@ -46,7 +46,6 @@ FORCE_TEXT = "force message text"
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
 
-
 @app.on_message(
     filters.command(PLAY_COMMAND)
     & filters.group
@@ -68,6 +67,8 @@ async def play_commnd(
     mystic = await message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
     )
+userid = message.from_user.id
+if await check_is_joined(userid):
     plist_id = None
     slider = None
     plist_type = None
