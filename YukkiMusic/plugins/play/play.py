@@ -73,6 +73,7 @@ async def play_commnd(
     plist_type = None
     spotify = None
     user_id = message.from_user.id
+    if await check_is_joined(userid):
     user_name = message.from_user.first_name
     audio_telegram = (
         (
