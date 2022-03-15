@@ -68,7 +68,7 @@ async def play_commnd(
         _["play_2"].format(channel) if channel else _["play_1"]
     )
 user_id = message.from_user.id
-    if await check_is_joined(userid)
+    if await check_is_joined(userid):
     plist_id = None
     slider = None
     plist_type = None
