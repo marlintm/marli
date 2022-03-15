@@ -56,9 +56,9 @@ async def play_commnd(
     playmode,
     url,
     fplay,
-)
-async def check_is_joined(userid): 
-    try:
+):
+    async def check_is_joined(userid): 
+     try:
         status = await app.get_chat_member("NewMoviez365", userid)
         return True
     except Exception:
