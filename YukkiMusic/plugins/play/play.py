@@ -54,10 +54,10 @@ PLAY_COMMAND = get_command("PLAY_COMMAND")
 )
 @PlayWrapper
 async def play_commnd(
-    client,
-    message: Message,
     user_id = message.from_user.id
     if await check_is_joined(userid): None
+    client,
+    message: Message,
     _,
     chat_id,
     video,
