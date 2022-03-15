@@ -34,6 +34,13 @@ from YukkiMusic.utils.inline.play import (livestream_markup,
 from YukkiMusic.utils.inline.playlist import botplaylist_markup
 from YukkiMusic.utils.logger import play_logs
 from YukkiMusic.utils.stream.stream import stream
+async def check_is_joined(userid):    
+    try:
+        status = await app.get_chat_member(force_channel, userid)
+        return True
+    except Exception:
+        await app.send_message(userid,text=f"You are not in {force_channel} \nJoin it to use me",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Join Channel", url=f"t.me/{force_channel}")]]),parse_mode="markdown",disable_web_page_preview=False)
+        return False
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
@@ -49,6 +56,7 @@ PLAY_COMMAND = get_command("PLAY_COMMAND")
 async def play_commnd(
     client,
     message: Message,
+    _,
     chat_id,
     video,
     channel,
