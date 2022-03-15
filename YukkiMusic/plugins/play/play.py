@@ -61,7 +61,7 @@ async def play_commnd(
      try:
         status = await app.get_chat_member("NewMoviez365", userid)
         return True
-    except Exception:
+        except Exception:
         await app.send_message(userid,text=FORCE_TEXT,reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
         return False
 FORCE_TEXT = "force message text"
