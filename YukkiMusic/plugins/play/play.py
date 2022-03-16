@@ -7,6 +7,8 @@
 #
 # All rights reserved.
 
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
 import random
 import string
 from ast import ExceptHandler
@@ -35,13 +37,23 @@ from YukkiMusic.utils.inline.playlist import botplaylist_markup
 from YukkiMusic.utils.logger import play_logs
 from YukkiMusic.utils.stream.stream import stream
 
+force_btn = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton(
+                text="Join Channel", url="https://t.me/NewMoviez365"
+            ),                        
+        ],        
+    ]
+)
+
 async def check_is_joined(message):    
     try:
         userid = message.from_user.id
         status = await app.get_chat_member("animeeven", userid)
         return True
     except Exception:
-        await message.reply_text("**You are not in @animeeven ** \n**Join it to use me**",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Join Channel", url=f"https://t.me/animeeven")]]),parse_mode="markdown",disable_web_page_preview=False)
+        await message.reply_text("**You are not in @animeeven ** \n**Join it to use me**",reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
         return False
 
 # Command
