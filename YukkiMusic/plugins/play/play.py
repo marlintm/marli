@@ -41,7 +41,7 @@ force_btn = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="Join Channel", url="https://t.me/NewMoviez365"
+                text="Join Channel", url="https://t.me/animeeven"
             ),                        
         ],        
     ]
