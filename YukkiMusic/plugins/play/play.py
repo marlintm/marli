@@ -7,6 +7,8 @@
 #
 # All rights reserved.
 
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
 import random
 import string
 from ast import ExceptHandler
@@ -34,12 +36,24 @@ from YukkiMusic.utils.inline.play import (livestream_markup,
 from YukkiMusic.utils.inline.playlist import botplaylist_markup
 from YukkiMusic.utils.logger import play_logs
 from YukkiMusic.utils.stream.stream import stream
-async def check_is_joined(userid):    
+
+force_btn = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton(
+                text="اشترك من هنا", url="https://t.me/animeeven"
+            ),                        
+        ],        
+    ]
+)
+
+async def check_is_joined(message):    
     try:
-        status = await app.get_chat_member(animeeven, userid)
+        userid = message.from_user.id
+        status = await app.get_chat_member("animeeven", userid)
         return True
     except Exception:
-        await app.send_message(userid,text=f"You are not in {force_channel} \nJoin it to use me",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Join Channel", url=f"t.me/{force_channel}")]]),parse_mode="markdown",disable_web_page_preview=False)
+        await message.reply_text("**انت ليست مشترك في قناة البوت @animeeven ** \n**انضم حتي يتم استخدام البوت**",reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
         return False
 
 # Command
@@ -64,8 +78,9 @@ async def play_commnd(
     url,
     fplay,
 ):
-    user_id = message.from_user.id
-    if await check_is_joined(userid): None
+    
+    if not await check_is_joined(message):
+        return
     mystic = await message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
     )
