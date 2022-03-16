@@ -4,15 +4,15 @@ from config import MUSIC_BOT_NAME as BOT_NAME
 
 BOT_USERNAME = app.username
 START_TEXT = f"""
-✨ **Hello MENTION !**
+✨ **مرحبا MENTION !**
 
-**You can use [{BOT_NAME}](https://t.me/{BOT_USERNAME}) to play Music or Videos in your Group Video Chat.**
+**انت تستطيع استخدام [{BOT_NAME}](https://t.me/{BOT_USERNAME}) لتشغيل الاغاني او الفيديوهات في المكالمات الصوتيه.**
 
-💡 **Find out all the Bot's commands and how they work by clicking on the ➤ 📚 Commands button**
+💡 **اذا واجهتك مشكلة في الاستخدام تحدث مع المطور ➤ 📚 @C_AFU**
 """
 
 COMMANDS_TEXT = f"""
-✨ **Hello MENTION !**
+✨ **مرحبا MENTION !**
 
 **Click on the buttons below to know my commands.**
 """
@@ -29,10 +29,10 @@ START_BUTTON_GROUP = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton(
-                text="📣 Updates Channel", url="https://t.me/TechZBots"
+                text="📣 Updates Channel", url="https://t.me/animeeven"
             ),
             InlineKeyboardButton(
-                text="💬 Support Group", url="https://t.me/TechZBots_Support"
+                text="💬 Support Group", url="https://t.me/animeeven"
             ),                       
         ],        
     ]
@@ -51,10 +51,10 @@ START_BUTTON_PRIVATE = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton(
-                text="📣 Updates Channel", url="https://t.me/TechZBots"
+                text="📣 Updates Channel", url="https://t.me/animeeven"
             ),
             InlineKeyboardButton(
-                text="💬 Support Group", url="https://t.me/TechZBots_Support"
+                text="💬 Support Group", url="https://t.me/animeeven"
             ),                       
         ],        
     ]
