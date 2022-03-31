@@ -7,6 +7,8 @@
 #
 # All rights reserved.
 
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
 import os
 import re
 
@@ -24,6 +26,25 @@ from YukkiMusic import YouTube, app
 from YukkiMusic.utils.decorators.language import language, languageCB
 from YukkiMusic.utils.formatters import convert_bytes
 from YukkiMusic.utils.inline.song import song_markup
+
+force_btn = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton(
+                text="اضغط للاشتراك", url="https://t.me/animeeven"
+            ),                        
+        ],        
+    ]
+)
+
+async def check_is_joined(message):    
+    try:
+        userid = message.from_user.id
+        status = await app.get_chat_member("animeeven", userid)
+        return True
+    except Exception:
+        await message.reply_text("**انت ليست مشترك في قناة البوت @animeeven ** \n**انضم لتستطيع تشتغل الاغاني**",reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
+        return False
 
 # Command
 SONG_COMMAND = get_command("SONG_COMMAND")
@@ -62,6 +83,8 @@ async def song_commad_group(client, message: Message, _):
 @language
 async def song_commad_private(client, message: Message, _):
     await message.delete()
+if not await check_is_joined(message):
+        return
     url = await YouTube.url(message)
     if url:
         if not await YouTube.exists(url):
