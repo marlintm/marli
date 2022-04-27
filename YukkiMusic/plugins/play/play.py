@@ -6,10 +6,7 @@
 # Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
 #
 # All rights reserved.
-
-
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-
 
 import random
 import string
@@ -38,7 +35,6 @@ from YukkiMusic.utils.inline.play import (livestream_markup,
 from YukkiMusic.utils.inline.playlist import botplaylist_markup
 from YukkiMusic.utils.logger import play_logs
 from YukkiMusic.utils.stream.stream import stream
-
 force_btn = InlineKeyboardMarkup(
     [
         [
@@ -80,10 +76,8 @@ async def play_commnd(
     url,
     fplay,
 ):
- if not await check_is_joined(message):
+if not await check_is_joined(message):
         return
-
-
     mystic = await message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
     )
