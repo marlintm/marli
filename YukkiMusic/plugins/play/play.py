@@ -6,6 +6,7 @@
 # Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
 #
 # All rights reserved.
+
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 import random
@@ -35,11 +36,12 @@ from YukkiMusic.utils.inline.play import (livestream_markup,
 from YukkiMusic.utils.inline.playlist import botplaylist_markup
 from YukkiMusic.utils.logger import play_logs
 from YukkiMusic.utils.stream.stream import stream
+
 force_btn = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="اضغط للاشتراك", url="https://t.me/animeeven"
+                text="Join Channel", url="https://t.me/animeeven"
             ),                        
         ],        
     ]
@@ -51,7 +53,7 @@ async def check_is_joined(message):
         status = await app.get_chat_member("animeeven", userid)
         return True
     except Exception:
-        await message.reply_text("**انت ليست مشترك في قناة البوت @animeeven ** \n**انضم لتستطيع تشتغل الاغاني**",reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
+        await message.reply_text("**You are not in @animeeven ** \n**Join it to use me**",reply_markup=force_btn,parse_mode="markdown",disable_web_page_preview=False)
         return False
 
 # Command
@@ -76,10 +78,9 @@ async def play_commnd(
     url,
     fplay,
 ):
-
-if not await check_is_joined(message):
+    
+    if not await check_is_joined(message):
         return
-
     mystic = await message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
     )
@@ -150,7 +151,6 @@ if not await check_is_joined(message):
                 )
                 return await mystic.edit_text(err)
             return await mystic.delete()
-        return
     elif video_telegram:
         if not await is_video_allowed(message.chat.id):
             return await mystic.edit_text(_["play_3"])
@@ -200,7 +200,6 @@ if not await check_is_joined(message):
                 )
                 return await mystic.edit_text(err)
             return await mystic.delete()
-        return
     elif url:
         if await YouTube.exists(url):
             if "playlist" in url:
@@ -381,7 +380,7 @@ if not await check_is_joined(message):
                     chat_id,
                     message.from_user.first_name,
                     message.chat.id,
-                    video=video,
+                    video=True,
                     streamtype="index",
                     forceplay=fplay,
                 )
@@ -432,7 +431,6 @@ if not await check_is_joined(message):
                     user_id,
                     "v" if video else "a",
                     "c" if channel else "g",
-                    "f" if fplay else "d",
                 )
                 return await mystic.edit_text(
                     _["play_15"],
@@ -576,7 +574,6 @@ async def play_music(client, CallbackQuery, _):
             CallbackQuery.from_user.id,
             mode,
             "c" if cplay == "c" else "g",
-            "f" if fplay else "d",
         )
         return await mystic.edit_text(
             _["play_15"],
