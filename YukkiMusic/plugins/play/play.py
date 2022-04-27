@@ -7,7 +7,9 @@
 #
 # All rights reserved.
 
+
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
 
 import random
 import string
@@ -79,9 +81,9 @@ async def play_commnd(
     fplay,
 ):
 
-
-    if not await check_is_joined(message):
+ if not await check_is_joined(message):
         return
+
     mystic = await message.reply_text(
         _["play_2"].format(channel) if channel else _["play_1"]
     )
