@@ -4,11 +4,11 @@ from config import MUSIC_BOT_NAME as BOT_NAME
 
 BOT_USERNAME = app.username
 START_TEXT = f"""
-✨ **Hello MENTION !**
+✨ **مرحبا MENTION !**
 
-**You can use [{BOT_NAME}](https://t.me/{BOT_USERNAME}) to play Music or Videos in your Group Video Chat.**
+**انت تستطيع استخدام [{BOT_NAME}](https://t.me/{BOT_USERNAME}) لتشغيل الاغاني والفيديوهات في المكالمات الصوتيه للمجموعات.**
 
-💡 **Find out all the Bot's commands and how they work by clicking on the ➤ 📚 Commands button**
+💡 **اذا واجهتك اي مشكله تحدث مع المطور ➤ 📚 @C_AFU**
 """
 
 COMMANDS_TEXT = f"""
