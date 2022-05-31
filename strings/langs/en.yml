@@ -75,7 +75,7 @@ admin_34 : "Failed to seek the current stream."
 
 # Start
 start_1 : "Thanks for having me in {0}.\n{1} is alive.\n\nFor any assistance or help, checkout our support group and channel."
-start_2 : "مرحبا بك, انا اسمي is {0}.\n\nانا بوت لتشغيل الاغاني والفيديوهات في المكالمات الصوتيه, ضفني الي مجموعتك ثم استمتع\n\nاذا واجهتك مشكله تحدث الي مطور البوت."
+start_2 : "مرحبا بك, انا اسمي  {0}.\n\nانا بوت لتشغيل الاغاني والفيديوهات في المكالمات الصوتيه, ضفني الي مجموعتك ثم استمتع\n\nاذا واجهتك مشكله تحدث الي مطور البوت."
 start_3 : "Welcome To {0}\n\nI don't need any **admin permission** to work ( until asked for ).\n\nAssistant Username:- @{1}\nAssistant ID:- {2}"
 start_4 : "{0}'s Owner[{1}] has just joined your chat."
 start_5 : "A member of {0}'s Sudo User[{1}] has just joined your chat."
@@ -246,14 +246,14 @@ UNBAN_BUTTON : "🗑 Unban Assistant"
 L_B_1 : "🚀 Checkout Lyrics Now"
 
 # Start
-S_B_1 : "🗒 Commands"
-S_B_2 : "🔧 Settings"
-S_B_3 : "📨 Support"
-S_B_4 : "📨 Channel"
-S_B_5 : "✚ Add me to your Group"
+S_B_1 : "🗒 الاوامر"
+S_B_2 : "🔧 الاعدادت"
+S_B_3 : "📨 الحساب المساعد"
+S_B_4 : "📨 قناة الدعم"
+S_B_5 : "✚ اضفني الي مجموعتك"
 S_B_6 : "💡 Git Repo"
 S_B_7 : "👤 مطور البوت"
-S_B_8 : "🔎 How to Use? Commands Menu."
+S_B_8 : "🔎 كيفية استخدام الاوامر."
 
 #Help 
 H_B_1 : "Admin Commands"
