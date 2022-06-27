@@ -11,54 +11,41 @@ HELP_1 = """✅**<u>Admin Commands:</u>**
 
 **c** stands for channel play.
 
-/pause or /cpause - Pause the playing music.
-/resume or /cresume- Resume the paused music.
-/mute or /cmute- Mute the playing music.
-/unmute or /cunmute- Unmute the muted music.
-/skip or /cskip- Skip the current playing music.
-/stop or /cstop- Stop the playing music.
-/shuffle or /cshuffle- Randomly shuffles the queued playlist.
-/seek or /cseek - Forward Seek the music to your duration
-/seekback or /cseekback - Backward Seek the music to your duration
-/restart - Restart bot for your chat .
+✅ اليك قائمة اوامر الادمن ,
+يجب عليك قبل كل امر وضع علامه /
+- جميع الاوامر خاصه ب الادمن فقط .
+- لعرض سرعه البوت اكتب : بينج .
+- للتحكم في لغه البوت اكتب : اللغه .
+- للتحكم في ازار التشغيل اكتب : وضع شغل .
+- لعرض اعدادات البوت اكتب : الاعدادات .
 
+- ثانيا اليك اوامر الرتب .
+- لرفع ادمن في الجروب اكتب : ر ا د .
+- لرفع ادمن في الجروب اكتب : ت ا د .
+- لعرض قائمه الادمنيه اكتب : ق ا د .
 
-✅<u>**Specific Skip:**</u>
-/skip or /cskip [Number(example: 3)] 
-    - Skips music to a the specified queued number. Example: /skip 3 will skip music to third queued music and will ignore 1 and 2 music in queue.
-
-✅<u>**Loop Play:**</u>
-/loop or /cloop [enable/disable] or [Numbers between 1-10] 
-    - When activated, bot loops the current playing music to 1-10 times on voice chat. Default to 10 times.
-
-✅<u>**Auth Users:**</u>
-Auth Users can use admin commands without admin rights in your chat.
-
-/auth [Username] - Add a user to AUTH LIST of the group.
-/unauth [Username] - Remove a user from AUTH LIST of the group.
-/authusers - Check AUTH LIST of the group."""
+- ثالثا اليك اوامر الحظر .
+- لحظر عضو من الجروب اكتب : ح ر .
+- لالغاء حظر عضو من الجروب اكتب : ا ر .
+- لعرض قائمه المحظورين اكتب : ق ح ر .."""
 
 
 HELP_2 = """✅<u>**Play Commands:**</u>
 
-Available Commands = play , vplay , cplay
 
-ForcePlay Commands = playforce , vplayforce , cplayforce
+✅ اليك قائمة اوامر التشغيل ,
 
-**c** stands for channel play.
-**v** stands for video play.
-**force** stands for force play.
-
-/play or /vplay or /cplay  - Bot will start playing your given query on voice chat or Stream live links on voice chats.
-
-/playforce or /vplayforce or /cplayforce -  **Force Play** stops the current playing track on voice chat and starts playing the searched track instantly without disturbing/clearing queue.
-
-/channelplay [Chat username or id] or [Disable] - Connect channel to a group and stream music on channel's voice chat from your group.
-
-
-✅**<u>Bot's Server Playlists:</u>**
-/playlist  - Check Your Saved Playlist On Servers.
-/deleteplaylist - Delete any saved music in your playlist
+- اولا اليك اوامر التشغيل ف الجروب .
+عليك استخدام / قبل اي امر 
+- لتشغيل اغنيه اكتب : تشغيل او شغل او /play
+- لتشغيل فيديو اكتب : فيديو او /video
+- لأنهاء الاغنيه اكتب : ايقاف او انهاء او /stop
+- لايقاف الاغنيه مؤقت اكتب : وقف او /pause
+- لتكملة الاغنيه من الايقاف المؤقت اكتب : كمل او /resume
+- لتخطي الاغنيه اكتب : تخطي او /skip
+- لكتم البوت في الكول اكتب : اسكت او /mute
+- لألغاء كتم البوت في الكول اكتب : اتكلم او /unmute
+- لاعادة تشغيل البوت اكتب : /restart
 /play  - Start playing Your Saved Playlist from Servers."""
 
 

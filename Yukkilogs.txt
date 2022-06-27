@@ -1,0 +1,536 @@
+[22-Jun-22 18:38:15 - INFO] - YukkiMusic.core.dir - Directories Updated.
+[22-Jun-22 18:38:15 - INFO] - YukkiMusic.core.git - Git Client Found [VPS DEPLOYER]
+[22-Jun-22 18:38:15 - INFO] - YukkiMusic.misc - Database Initialized.
+[22-Jun-22 18:38:17 - INFO] - YukkiMusic.misc - Sudoers Loaded.
+[22-Jun-22 18:38:17 - INFO] - YukkiMusic.core.bot - Starting Bot
+[22-Jun-22 18:38:18 - WARNING] - YukkiMusic - No Spotify Vars defined. Your bot won't be able to play spotify queries.
+[22-Jun-22 18:38:23 - ERROR] - YukkiMusic.core.bot - Bot has failed to access the log Group. Make sure that you have added your bot to your log channel and promoted as admin!
+[22-Jun-22 18:39:09 - INFO] - YukkiMusic.core.dir - Directories Updated.
+[22-Jun-22 18:39:09 - INFO] - YukkiMusic.core.git - Git Client Found [VPS DEPLOYER]
+[22-Jun-22 18:39:09 - INFO] - YukkiMusic.misc - Database Initialized.
+[22-Jun-22 18:39:11 - INFO] - YukkiMusic.misc - Sudoers Loaded.
+[22-Jun-22 18:39:11 - INFO] - YukkiMusic.core.bot - Starting Bot
+[22-Jun-22 18:39:12 - WARNING] - YukkiMusic - No Spotify Vars defined. Your bot won't be able to play spotify queries.
+[22-Jun-22 18:39:14 - ERROR] - YukkiMusic.core.bot - Bot has failed to access the log Group. Make sure that you have added your bot to your log channel and promoted as admin!
+[22-Jun-22 18:39:37 - INFO] - YukkiMusic.core.dir - Directories Updated.
+[22-Jun-22 18:39:37 - INFO] - YukkiMusic.core.git - Git Client Found [VPS DEPLOYER]
+[22-Jun-22 18:39:37 - INFO] - YukkiMusic.misc - Database Initialized.
+[22-Jun-22 18:39:38 - INFO] - YukkiMusic.misc - Sudoers Loaded.
+[22-Jun-22 18:39:38 - INFO] - YukkiMusic.core.bot - Starting Bot
+[22-Jun-22 18:39:39 - WARNING] - YukkiMusic - No Spotify Vars defined. Your bot won't be able to play spotify queries.
+[22-Jun-22 18:39:42 - INFO] - YukkiMusic.core.bot - MusicBot Started as ᥉ᎥᖇᎥᥲ️ ꪔυ᥉Ꭵᥴ
+[22-Jun-22 18:39:42 - INFO] - Yukkimusic.plugins - Successfully Imported Modules 
+[22-Jun-22 18:39:42 - INFO] - YukkiMusic.core.userbot - Starting Assistant Clients
+[22-Jun-22 18:39:43 - INFO] - YukkiMusic.core.userbot - Assistant Started as . ◟َِ 𝙨𝙞𝙧𝙞𝙖 𝙢𝙪𝙨𝙞𝙘 ⁦.𓁷
+[22-Jun-22 18:39:43 - INFO] - YukkiMusic.core.call - Starting PyTgCalls Client
+
+[22-Jun-22 18:39:47 - INFO] - YukkiMusic - Yukki Music Bot Started Successfully
+[22-Jun-22 18:41:02 - ERROR] - pyrogram.dispatcher - ' تشغيل | فيديو | ايقاف | وقف | كمل | تخطي '
+Traceback (most recent call last):
+  File "/root/jmthon/YukkiMusic/plugins/bot/start.py", line 200, in start_comm
+    caption=_["start_2"].format(
+KeyError: ' تشغيل | فيديو | ايقاف | وقف | كمل | تخطي '
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/dispatcher.py", line 222, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/jmthon/YukkiMusic/utils/decorators/language.py", line 64, in wrapper
+    return await mystic(_, message, language)
+  File "/root/jmthon/YukkiMusic/plugins/bot/start.py", line 207, in start_comm
+    _["start_2"].format(config.MUSIC_BOT_NAME),
+KeyError: ' تشغيل | فيديو | ايقاف | وقف | كمل | تخطي '
+[22-Jun-22 18:41:04 - ERROR] - pyrogram.dispatcher - ' تشغيل | فيديو | ايقاف | وقف | كمل | تخطي '
+Traceback (most recent call last):
+  File "/root/jmthon/YukkiMusic/plugins/bot/start.py", line 200, in start_comm
+    caption=_["start_2"].format(
+KeyError: ' تشغيل | فيديو | ايقاف | وقف | كمل | تخطي '
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/dispatcher.py", line 222, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/jmthon/YukkiMusic/utils/decorators/language.py", line 64, in wrapper
+    return await mystic(_, message, language)
+  File "/root/jmthon/YukkiMusic/plugins/bot/start.py", line 207, in start_comm
+    _["start_2"].format(config.MUSIC_BOT_NAME),
+KeyError: ' تشغيل | فيديو | ايقاف | وقف | كمل | تخطي '
+[22-Jun-22 18:42:38 - INFO] - YukkiMusic.core.dir - Directories Updated.
+[22-Jun-22 18:42:38 - INFO] - YukkiMusic.core.git - Git Client Found [VPS DEPLOYER]
+[22-Jun-22 18:42:38 - INFO] - YukkiMusic.misc - Database Initialized.
+[22-Jun-22 18:42:40 - INFO] - YukkiMusic.misc - Sudoers Loaded.
+[22-Jun-22 18:42:40 - INFO] - YukkiMusic.core.bot - Starting Bot
+[22-Jun-22 18:42:41 - WARNING] - YukkiMusic - No Spotify Vars defined. Your bot won't be able to play spotify queries.
+[22-Jun-22 18:42:44 - INFO] - YukkiMusic.core.bot - MusicBot Started as ᥉ᎥᖇᎥᥲ️ ꪔυ᥉Ꭵᥴ
+[22-Jun-22 18:42:44 - INFO] - Yukkimusic.plugins - Successfully Imported Modules 
+[22-Jun-22 18:42:44 - INFO] - YukkiMusic.core.userbot - Starting Assistant Clients
+[22-Jun-22 18:42:45 - INFO] - YukkiMusic.core.userbot - Assistant Started as . ◟َِ 𝙨𝙞𝙧𝙞𝙖 𝙢𝙪𝙨𝙞𝙘 ⁦.𓁷
+[22-Jun-22 18:42:45 - INFO] - YukkiMusic.core.call - Starting PyTgCalls Client
+
+[22-Jun-22 18:42:52 - INFO] - YukkiMusic - Yukki Music Bot Started Successfully
+[22-Jun-22 18:47:24 - INFO] - YukkiMusic.core.dir - Directories Updated.
+[22-Jun-22 18:47:24 - INFO] - YukkiMusic.core.git - Git Client Found [VPS DEPLOYER]
+[22-Jun-22 18:47:24 - INFO] - YukkiMusic.misc - Database Initialized.
+[22-Jun-22 18:47:26 - INFO] - YukkiMusic.misc - Sudoers Loaded.
+[22-Jun-22 18:47:26 - INFO] - YukkiMusic.core.bot - Starting Bot
+[22-Jun-22 18:47:27 - WARNING] - YukkiMusic - No Spotify Vars defined. Your bot won't be able to play spotify queries.
+[22-Jun-22 18:47:30 - INFO] - YukkiMusic.core.bot - MusicBot Started as ᥉ᎥᖇᎥᥲ️ ꪔυ᥉Ꭵᥴ
+[22-Jun-22 18:47:30 - INFO] - Yukkimusic.plugins - Successfully Imported Modules 
+[22-Jun-22 18:47:30 - INFO] - YukkiMusic.core.userbot - Starting Assistant Clients
+[22-Jun-22 18:47:31 - INFO] - YukkiMusic.core.userbot - Assistant Started as . ◟َِ 𝙨𝙞𝙧𝙞𝙖 𝙢𝙪𝙨𝙞𝙘 ⁦.𓁷
+[22-Jun-22 18:47:31 - INFO] - YukkiMusic.core.call - Starting PyTgCalls Client
+
+[22-Jun-22 18:47:33 - INFO] - YukkiMusic - Yukki Music Bot Started Successfully
+[22-Jun-22 18:52:51 - INFO] - YukkiMusic.core.dir - Directories Updated.
+[22-Jun-22 18:52:51 - INFO] - YukkiMusic.core.git - Git Client Found [VPS DEPLOYER]
+[22-Jun-22 18:52:51 - INFO] - YukkiMusic.misc - Database Initialized.
+[22-Jun-22 18:52:53 - INFO] - YukkiMusic.misc - Sudoers Loaded.
+[22-Jun-22 18:52:53 - INFO] - YukkiMusic.core.bot - Starting Bot
+[22-Jun-22 18:52:54 - WARNING] - YukkiMusic - No Spotify Vars defined. Your bot won't be able to play spotify queries.
+[22-Jun-22 18:52:56 - INFO] - YukkiMusic.core.bot - MusicBot Started as ᥉ᎥᖇᎥᥲ️ ꪔυ᥉Ꭵᥴ
+[22-Jun-22 18:52:56 - INFO] - Yukkimusic.plugins - Successfully Imported Modules 
+[22-Jun-22 18:52:56 - INFO] - YukkiMusic.core.userbot - Starting Assistant Clients
+[22-Jun-22 18:52:57 - INFO] - YukkiMusic.core.userbot - Assistant Started as . ◟َِ 𝙨𝙞𝙧𝙞𝙖 𝙢𝙪𝙨𝙞𝙘 ⁦.𓁷
+[22-Jun-22 18:52:57 - INFO] - YukkiMusic.core.call - Starting PyTgCalls Client
+
+[22-Jun-22 18:53:00 - INFO] - YukkiMusic - Yukki Music Bot Started Successfully
+[22-Jun-22 18:57:29 - ERROR] - pyrogram.dispatcher - Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/dispatcher.py", line 222, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/jmthon/YukkiMusic/utils/decorators/language.py", line 52, in wrapper
+    return await mystic(_, CallbackQuery, language)
+  File "/root/jmthon/YukkiMusic/plugins/bot/help.py", line 110, in helper_cb
+    await CallbackQuery.edit_message_text(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 207, in edit_message_text
+    return await self._client.edit_message_text(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/messages/edit_message_text.py", line 83, in edit_message_text
+    r = await self.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/send.py", line 77, in send
+    r = await self.session.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 362, in send
+    return await self._send(data, timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 332, in _send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MessageNotModified: Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")
+[22-Jun-22 20:55:06 - ERROR] - pyrogram.dispatcher - Telegram says: [403 CHAT_SEND_MEDIA_FORBIDDEN] - You can't send media messages in this chat (caused by "messages.SendMedia")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/dispatcher.py", line 222, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/jmthon/YukkiMusic/utils/decorators/play.py", line 71, in wrapper
+    return await message.reply_photo(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/types/messages_and_media/message.py", line 1977, in reply_photo
+    return await self._client.send_photo(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/messages/send_photo.py", line 171, in send_photo
+    r = await self.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/send.py", line 77, in send
+    r = await self.session.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 362, in send
+    return await self._send(data, timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 332, in _send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.forbidden_403.ChatSendMediaForbidden: Telegram says: [403 CHAT_SEND_MEDIA_FORBIDDEN] - You can't send media messages in this chat (caused by "messages.SendMedia")
+[22-Jun-22 20:55:07 - ERROR] - pyrogram.dispatcher - Telegram says: [403 CHAT_SEND_MEDIA_FORBIDDEN] - You can't send media messages in this chat (caused by "messages.SendMedia")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/dispatcher.py", line 222, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/jmthon/YukkiMusic/utils/decorators/play.py", line 71, in wrapper
+    return await message.reply_photo(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/types/messages_and_media/message.py", line 1977, in reply_photo
+    return await self._client.send_photo(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/messages/send_photo.py", line 171, in send_photo
+    r = await self.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/send.py", line 77, in send
+    r = await self.session.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 362, in send
+    return await self._send(data, timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 332, in _send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.forbidden_403.ChatSendMediaForbidden: Telegram says: [403 CHAT_SEND_MEDIA_FORBIDDEN] - You can't send media messages in this chat (caused by "messages.SendMedia")
+[23-Jun-22 10:58:38 - ERROR] - pyrogram.dispatcher - getattr(): attribute name must be string
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/dispatcher.py", line 222, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/jmthon/YukkiMusic/plugins/tools/speedtest.py", line 46, in speedtest_function
+    result, path = await loop.run_in_executor(None, testspeed, m)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/types/object.py", line 94, in __getitem__
+    return getattr(self, item)
+TypeError: getattr(): attribute name must be string
+[23-Jun-22 11:45:56 - ERROR] - pyrogram.dispatcher - Telegram says: [400 WEBPAGE_MEDIA_EMPTY] - The URL doesn't contain any valid media (caused by "messages.SendMedia")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/dispatcher.py", line 222, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/jmthon/YukkiMusic/utils/decorators/language.py", line 34, in wrapper
+    return await mystic(_, message, language)
+  File "/root/jmthon/YukkiMusic/plugins/tools/songs.py", line 87, in song_commad_private
+    return await message.reply_photo(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/types/messages_and_media/message.py", line 1977, in reply_photo
+    return await self._client.send_photo(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/messages/send_photo.py", line 171, in send_photo
+    r = await self.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/send.py", line 77, in send
+    r = await self.session.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 362, in send
+    return await self._send(data, timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 332, in _send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.WebpageMediaEmpty: Telegram says: [400 WEBPAGE_MEDIA_EMPTY] - The URL doesn't contain any valid media (caused by "messages.SendMedia")
+[23-Jun-22 14:36:21 - ERROR] - asyncio - SetVideoCallStatus: Telegram says: [400 Bad Request] - [400 GROUPCALL_FORBIDDEN] (caused by "phone.EditGroupCallParticipant")
+[23-Jun-22 14:39:16 - ERROR] - asyncio - SetVideoCallStatus: Telegram says: [400 Bad Request] - [400 GROUPCALL_FORBIDDEN] (caused by "phone.EditGroupCallParticipant")
+[23-Jun-22 14:43:01 - ERROR] - asyncio - SetVideoCallStatus: Telegram says: [400 Bad Request] - [400 GROUPCALL_FORBIDDEN] (caused by "phone.EditGroupCallParticipant")
+[23-Jun-22 14:51:28 - ERROR] - pyrogram.dispatcher - Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/dispatcher.py", line 222, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/jmthon/YukkiMusic/utils/decorators/language.py", line 52, in wrapper
+    return await mystic(_, CallbackQuery, language)
+  File "/root/jmthon/YukkiMusic/plugins/bot/help.py", line 110, in helper_cb
+    await CallbackQuery.edit_message_text(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 207, in edit_message_text
+    return await self._client.edit_message_text(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/messages/edit_message_text.py", line 83, in edit_message_text
+    r = await self.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/send.py", line 77, in send
+    r = await self.session.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 362, in send
+    return await self._send(data, timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 332, in _send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MessageNotModified: Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")
+[23-Jun-22 15:27:48 - ERROR] - pyrogram.dispatcher - Telegram says: [403 CHAT_WRITE_FORBIDDEN] - You don't have rights to send messages in this chat (caused by "messages.SendMessage")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/dispatcher.py", line 222, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/jmthon/YukkiMusic/utils/decorators/admins.py", line 122, in wrapper
+    return await mystic(client, message, _)
+  File "/root/jmthon/YukkiMusic/plugins/play/channel.py", line 75, in playmode_
+    return await message.reply_text(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/types/messages_and_media/message.py", line 940, in reply_text
+    return await self._client.send_message(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/messages/send_message.py", line 128, in send_message
+    r = await self.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/send.py", line 77, in send
+    r = await self.session.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 362, in send
+    return await self._send(data, timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 332, in _send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.forbidden_403.ChatWriteForbidden: Telegram says: [403 CHAT_WRITE_FORBIDDEN] - You don't have rights to send messages in this chat (caused by "messages.SendMessage")
+[23-Jun-22 15:28:25 - ERROR] - pyrogram.dispatcher - Telegram says: [403 CHAT_WRITE_FORBIDDEN] - You don't have rights to send messages in this chat (caused by "messages.SendMessage")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/dispatcher.py", line 222, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/jmthon/YukkiMusic/utils/decorators/language.py", line 34, in wrapper
+    return await mystic(_, message, language)
+  File "/root/jmthon/YukkiMusic/plugins/tools/songs.py", line 50, in song_commad_group
+    await message.reply_text(_["song_1"], reply_markup=upl)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/types/messages_and_media/message.py", line 940, in reply_text
+    return await self._client.send_message(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/messages/send_message.py", line 128, in send_message
+    r = await self.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/send.py", line 77, in send
+    r = await self.session.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 362, in send
+    return await self._send(data, timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 332, in _send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.forbidden_403.ChatWriteForbidden: Telegram says: [403 CHAT_WRITE_FORBIDDEN] - You don't have rights to send messages in this chat (caused by "messages.SendMessage")
+[23-Jun-22 15:52:33 - ERROR] - pyrogram.dispatcher - Telegram says: [406 CHANNEL_PRIVATE] - The channel/supergroup is not accessible (caused by "messages.SendMessage")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/dispatcher.py", line 222, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/jmthon/YukkiMusic/utils/decorators/language.py", line 64, in wrapper
+    return await mystic(_, message, language)
+  File "/root/jmthon/YukkiMusic/plugins/bot/start.py", line 233, in testbot
+    return await message.reply_text(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/types/messages_and_media/message.py", line 940, in reply_text
+    return await self._client.send_message(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/messages/send_message.py", line 128, in send_message
+    r = await self.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/send.py", line 77, in send
+    r = await self.session.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 362, in send
+    return await self._send(data, timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 332, in _send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.not_acceptable_406.ChannelPrivate: Telegram says: [406 CHANNEL_PRIVATE] - The channel/supergroup is not accessible (caused by "messages.SendMessage")
+[23-Jun-22 15:55:27 - ERROR] - pyrogram.dispatcher - Telegram says: [403 CHAT_WRITE_FORBIDDEN] - You don't have rights to send messages in this chat (caused by "messages.SendMessage")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/dispatcher.py", line 222, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/jmthon/YukkiMusic/utils/decorators/language.py", line 64, in wrapper
+    return await mystic(_, message, language)
+  File "/root/jmthon/YukkiMusic/plugins/bot/start.py", line 233, in testbot
+    return await message.reply_text(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/types/messages_and_media/message.py", line 940, in reply_text
+    return await self._client.send_message(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/messages/send_message.py", line 128, in send_message
+    r = await self.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/send.py", line 77, in send
+    r = await self.session.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 362, in send
+    return await self._send(data, timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 332, in _send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.forbidden_403.ChatWriteForbidden: Telegram says: [403 CHAT_WRITE_FORBIDDEN] - You don't have rights to send messages in this chat (caused by "messages.SendMessage")
+[23-Jun-22 17:50:23 - ERROR] - pytgcalls - joinCallError -> Error: No active voice chat found on -1001305013358
+[23-Jun-22 18:40:34 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-9462781' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:525> exception=ChannelInvalid('Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 60, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 147, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1001719436731'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 554, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 109, in resolve_peer
+    await self.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/send.py", line 77, in send
+    r = await self.session.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 362, in send
+    return await self._send(data, timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 332, in _send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.ChannelInvalid: Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")
+[24-Jun-22 03:06:47 - ERROR] - pyrogram.dispatcher - local variable 'title' referenced before assignment
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/dispatcher.py", line 222, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/jmthon/YukkiMusic/utils/decorators/language.py", line 64, in wrapper
+    return await mystic(_, message, language)
+  File "/root/jmthon/YukkiMusic/plugins/bot/start.py", line 152, in start_comm
+    ❇️**Title:** {title}
+UnboundLocalError: local variable 'title' referenced before assignment
+[24-Jun-22 12:54:23 - INFO] - YukkiMusic.core.dir - Directories Updated.
+[24-Jun-22 12:54:23 - INFO] - YukkiMusic.core.git - Git Client Found [VPS DEPLOYER]
+[24-Jun-22 12:54:23 - INFO] - YukkiMusic.misc - Database Initialized.
+[24-Jun-22 12:54:25 - INFO] - YukkiMusic.misc - Sudoers Loaded.
+[24-Jun-22 12:54:25 - INFO] - YukkiMusic.core.bot - Starting Bot
+[24-Jun-22 12:54:26 - WARNING] - YukkiMusic - No Spotify Vars defined. Your bot won't be able to play spotify queries.
+[24-Jun-22 12:54:28 - INFO] - YukkiMusic.core.bot - MusicBot Started as ᥉ᎥᖇᎥᥲ️ ꪔυ᥉Ꭵᥴ
+[24-Jun-22 12:54:28 - INFO] - Yukkimusic.plugins - Successfully Imported Modules 
+[24-Jun-22 12:54:28 - INFO] - YukkiMusic.core.userbot - Starting Assistant Clients
+[24-Jun-22 12:54:29 - INFO] - YukkiMusic.core.userbot - Assistant Started as . ◟َِ 𝙨𝙞𝙧𝙞𝙖 𝙢𝙪𝙨𝙞𝙘 ⁦.𓁷
+[24-Jun-22 12:54:29 - INFO] - YukkiMusic.core.call - Starting PyTgCalls Client
+
+[24-Jun-22 12:54:31 - ERROR] - YukkiMusic - [ERROR] - 
+
+Please turn on your Logger Group's Voice Call. Make sure you never close/end voice call in your log group
+[24-Jun-22 12:56:57 - INFO] - YukkiMusic.core.dir - Directories Updated.
+[24-Jun-22 12:56:57 - INFO] - YukkiMusic.core.git - Git Client Found [VPS DEPLOYER]
+[24-Jun-22 12:56:57 - INFO] - YukkiMusic.misc - Database Initialized.
+[24-Jun-22 12:56:58 - INFO] - YukkiMusic.misc - Sudoers Loaded.
+[24-Jun-22 12:56:58 - INFO] - YukkiMusic.core.bot - Starting Bot
+[24-Jun-22 12:56:59 - WARNING] - YukkiMusic - No Spotify Vars defined. Your bot won't be able to play spotify queries.
+[24-Jun-22 12:57:02 - INFO] - YukkiMusic.core.bot - MusicBot Started as ᥉ᎥᖇᎥᥲ️ ꪔυ᥉Ꭵᥴ
+[24-Jun-22 12:57:02 - INFO] - Yukkimusic.plugins - Successfully Imported Modules 
+[24-Jun-22 12:57:02 - INFO] - YukkiMusic.core.userbot - Starting Assistant Clients
+[24-Jun-22 12:57:03 - INFO] - YukkiMusic.core.userbot - Assistant Started as . ◟َِ 𝙨𝙞𝙧𝙞𝙖 𝙢𝙪𝙨𝙞𝙘 ⁦.𓁷
+[24-Jun-22 12:57:03 - INFO] - YukkiMusic.core.call - Starting PyTgCalls Client
+
+[24-Jun-22 12:57:04 - ERROR] - YukkiMusic - [ERROR] - 
+
+Please turn on your Logger Group's Voice Call. Make sure you never close/end voice call in your log group
+[24-Jun-22 12:59:47 - INFO] - YukkiMusic.core.dir - Directories Updated.
+[24-Jun-22 12:59:47 - INFO] - YukkiMusic.core.git - Git Client Found [VPS DEPLOYER]
+[24-Jun-22 12:59:47 - INFO] - YukkiMusic.misc - Database Initialized.
+[24-Jun-22 12:59:49 - INFO] - YukkiMusic.misc - Sudoers Loaded.
+[24-Jun-22 12:59:49 - INFO] - YukkiMusic.core.bot - Starting Bot
+[24-Jun-22 12:59:49 - WARNING] - YukkiMusic - No Spotify Vars defined. Your bot won't be able to play spotify queries.
+[24-Jun-22 12:59:52 - INFO] - YukkiMusic.core.bot - MusicBot Started as ᥉ᎥᖇᎥᥲ️ ꪔυ᥉Ꭵᥴ
+[24-Jun-22 12:59:52 - INFO] - Yukkimusic.plugins - Successfully Imported Modules 
+[24-Jun-22 12:59:52 - INFO] - YukkiMusic.core.userbot - Starting Assistant Clients
+[24-Jun-22 12:59:53 - INFO] - YukkiMusic.core.userbot - Assistant Started as . ◟َِ 𝙨𝙞𝙧𝙞𝙖 𝙢𝙪𝙨𝙞𝙘 ⁦.𓁷
+[24-Jun-22 12:59:53 - INFO] - YukkiMusic.core.call - Starting PyTgCalls Client
+
+[24-Jun-22 12:59:55 - INFO] - YukkiMusic - Yukki Music Bot Started Successfully
+[24-Jun-22 13:25:48 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-100698' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:525> exception=ChannelInvalid('Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 60, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 147, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1001522737094'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 554, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 109, in resolve_peer
+    await self.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/send.py", line 77, in send
+    r = await self.session.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 362, in send
+    return await self._send(data, timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 332, in _send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.ChannelInvalid: Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")
+[24-Jun-22 15:36:45 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-873639' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:525> exception=ChannelInvalid('Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 60, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 147, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1001728555137'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 554, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 109, in resolve_peer
+    await self.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/send.py", line 77, in send
+    r = await self.session.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 362, in send
+    return await self._send(data, timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 332, in _send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.ChannelInvalid: Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")
+[24-Jun-22 15:36:45 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-873645' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:525> exception=ChannelInvalid('Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 60, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 147, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1001728555137'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 554, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 109, in resolve_peer
+    await self.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/send.py", line 77, in send
+    r = await self.session.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 362, in send
+    return await self._send(data, timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 332, in _send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.ChannelInvalid: Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")
+[24-Jun-22 15:36:45 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-873657' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:525> exception=ChannelInvalid('Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 60, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 147, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1001728555137'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 554, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 109, in resolve_peer
+    await self.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/send.py", line 77, in send
+    r = await self.session.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 362, in send
+    return await self._send(data, timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 332, in _send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.ChannelInvalid: Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")
+[24-Jun-22 15:36:45 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-873651' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:525> exception=ChannelInvalid('Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 60, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 147, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1001728555137'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 554, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 109, in resolve_peer
+    await self.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/send.py", line 77, in send
+    r = await self.session.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 362, in send
+    return await self._send(data, timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 332, in _send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.ChannelInvalid: Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")
+[24-Jun-22 15:36:45 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-873664' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:525> exception=ChannelInvalid('Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 60, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 147, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1001728555137'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 554, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 109, in resolve_peer
+    await self.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/send.py", line 77, in send
+    r = await self.session.send(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 362, in send
+    return await self._send(data, timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 332, in _send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.ChannelInvalid: Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")
+[24-Jun-22 16:00:38 - INFO] - YukkiMusic.core.dir - Directories Updated.
+[24-Jun-22 16:00:38 - INFO] - YukkiMusic.core.git - Git Client Found [VPS DEPLOYER]
+[24-Jun-22 16:00:38 - INFO] - YukkiMusic.misc - Database Initialized.
+[24-Jun-22 16:00:40 - INFO] - YukkiMusic.misc - Sudoers Loaded.
+[24-Jun-22 16:00:40 - INFO] - YukkiMusic.core.bot - Starting Bot
+[24-Jun-22 16:00:41 - WARNING] - YukkiMusic - No Spotify Vars defined. Your bot won't be able to play spotify queries.
+[24-Jun-22 16:00:43 - INFO] - YukkiMusic.core.bot - MusicBot Started as ᥉ᎥᖇᎥᥲ️ ꪔυ᥉Ꭵᥴ
+[24-Jun-22 16:00:43 - INFO] - Yukkimusic.plugins - Successfully Imported Modules 
+[24-Jun-22 16:00:43 - INFO] - YukkiMusic.core.userbot - Starting Assistant Clients
+[24-Jun-22 16:00:44 - INFO] - YukkiMusic.core.userbot - Assistant Started as . ◟َِ 𝙨𝙞𝙧𝙞𝙖 𝙢𝙪𝙨𝙞𝙘 ⁦.𓁷
+[24-Jun-22 16:00:44 - INFO] - YukkiMusic.core.call - Starting PyTgCalls Client
+
+[24-Jun-22 16:00:47 - INFO] - YukkiMusic - Yukki Music Bot Started Successfully
